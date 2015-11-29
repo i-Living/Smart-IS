@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<KnowlegeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RulesViews>
+    <string>IF (Drink&amp;Tea) THEN Lack of Na</string>
+    <string>IF (Drink&amp;Coffee) THEN Lack of K</string>
+    <string>IF (Drink&amp;Cacao) THEN Lack of Mg</string>
+    <string>IF (Drink&amp;Milk) THEN Lack of Ca</string>
+    <string>IF (Food&amp;Sour) THEN Lack of Mg</string>
+    <string>IF (Food&amp;Sweet) THEN Lack of Ca</string>
+    <string>IF (Food&amp;Salty) THEN Lack of C</string>
+    <string>IF (Drink&amp;Food) THEN Lack of Na</string>
+    <string>IF (Sleep&amp;Food) THEN Lack of Dreams</string>
+    <string>IF (Sleep&amp;Food) THEN Lack of Dreams</string>
+    <string>IF (Food&amp;Drink) THEN Lack of HP</string>
+  </RulesViews>
+  <Facts>
+    <Fact>
+      <ConditionTitle />
+      <Title>Drink</Title>
+      <Question>Want to drink?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle />
+      <Title>Food</Title>
+      <Question>Want to eat?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Drink</ConditionTitle>
+      <Title>Tea</Title>
+      <Question>Want tea?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Drink</ConditionTitle>
+      <Title>Coffee</Title>
+      <Question>Want coffee?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Drink</ConditionTitle>
+      <Title>Cacao</Title>
+      <Question>Want cacao?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Drink</ConditionTitle>
+      <Title>Milk</Title>
+      <Question>Want milk?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Food</ConditionTitle>
+      <Title>Sour</Title>
+      <Question>Want smth sour?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Food</ConditionTitle>
+      <Title>Salty</Title>
+      <Question>Want smth salty?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle>Food</ConditionTitle>
+      <Title>Fatty</Title>
+      <Question>Want smth fatty?</Question>
+    </Fact>
+    <Fact>
+      <ConditionTitle />
+      <Title>Sleep</Title>
+      <Question>Want to sleep</Question>
+    </Fact>
+  </Facts>
+  <Conclusions>
+    <Conclusion>
+      <Title>Lack of Na</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of K</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of Mg</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of Ca</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of C</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of Dreams</Title>
+    </Conclusion>
+    <Conclusion>
+      <Title>Lack of HP</Title>
+    </Conclusion>
+  </Conclusions>
+</KnowlegeBase>

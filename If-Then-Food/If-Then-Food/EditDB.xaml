@@ -1,0 +1,38 @@
+﻿<Window x:Class="If_Then_Food.EditDB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EditDB" Height="370" Width="680" Closed="Window_Closed">
+    <Grid>
+        <StackPanel Name="Facts" HorizontalAlignment="Left" Margin="10,43,0,10" Width="200">
+            <Label Content="ConditionTitle"/>
+            <TextBox x:Name="FCTitle" Height="23" TextWrapping="Wrap"/>
+            <Label Content="Title"/>
+            <TextBox x:Name="FTitle" Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Question"/>
+            <TextBox x:Name="FQ" Height="23" TextWrapping="Wrap" Text=""/>
+            <Button x:Name="FAdd" Margin="0,10,0,10" Content="Add" Click="FAdd_Click"/>
+            <ComboBox x:Name="FCb" Margin="0,30,0,0" />
+            <Button x:Name="FD" Margin="0,10,0,10" Content="Delete" Click="FD_Click" />
+        </StackPanel>
+        <StackPanel x:Name="RulesViews" HorizontalAlignment="Left" Height="276" Margin="232,43,0,0" VerticalAlignment="Top" Width="200">
+            <Label Content="If"/>
+            <TextBox x:Name="RIf" Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Then"/>
+            <ComboBox x:Name="RThen"/>
+            <Button x:Name="RAdd" Margin="0,10,0,10" Content="Add" Click="RAdd_Click"/>
+            <ComboBox x:Name="RCb" Margin="0,78,0,0"/>
+            <Button x:Name="RD" Margin="0,10,0,10" Content="Delete" VerticalAlignment="Bottom" Click="RD_Click"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Facts" VerticalAlignment="Top" Width="200" Height="28" FontWeight="Bold" FontSize="16" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="232,10,0,0" TextWrapping="Wrap" Text="Rules" VerticalAlignment="Top" Width="200" Height="28" FontWeight="Bold" FontSize="16" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="456,10,0,0" TextWrapping="Wrap" Text="Conclusions" VerticalAlignment="Top" Width="200" Height="28" FontWeight="Bold" FontSize="16" TextAlignment="Center"/>
+        <StackPanel HorizontalAlignment="Left" Height="276" Margin="456,43,0,0" VerticalAlignment="Top" Width="200">
+            <Label Content="Title"/>
+            <TextBox x:Name="CT" Height="23" TextWrapping="Wrap" Text=""/>
+            <Button x:Name="CAdd" Margin="0,10,0,10" Content="Add" Click="CAdd_Click"/>
+            <ComboBox x:Name="CCb" Margin="0, 126,0,0"/>
+            <Button x:Name="CD" Margin="0,10,0,10" Content="Delete" Click="CD_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
