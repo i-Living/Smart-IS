@@ -1,4 +1,4 @@
-﻿using PRES_console;
+﻿using IfThenFoodProgram;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 using System.Threading;
 using System.Timers;
 
-namespace If_Then_Food
+namespace IfThenFoodProgram
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -26,8 +26,8 @@ namespace If_Then_Food
         KnowlegeBase knowlegeBase;
         WorkMemory workMemory;
         List<Fact> confirmedFacts;
-        List<string> logs;
-        Logs L;
+        List<string> facts;
+        ExplanationWindow ExplW;
         EditDB E;
         string title;
         public MainWindow()
@@ -37,8 +37,8 @@ namespace If_Then_Food
             knowlegeBase.LoadRules();
             workMemory = new WorkMemory(knowlegeBase.Facts);
             confirmedFacts = new List<Fact>();
-            logs = new List<string>();
-            L = new Logs(logs);
+            facts = new List<string>();
+            ExplW = new ExplanationWindow();
             title = string.Empty;
             Run();
         }
@@ -63,7 +63,7 @@ namespace If_Then_Food
             title = string.Empty;
             ybtn.IsEnabled = true;
             nbtn.IsEnabled = true;
-            L.LogsChange.Clear();
+            ExplW.Clear();
             Run();
         }
 
@@ -72,7 +72,8 @@ namespace If_Then_Food
             try
             {
                 confirmedFacts.Add(workMemory[0]);
-                L.AddLog(Convert.ToString(workMemory[0]) + " - yes");
+                facts.Add(Convert.ToString(workMemory[0]) + " - yes");
+                ExplW.Update(facts);
                 title = workMemory[0].Title;
                 workMemory.RemoveAll(x => x.ConditionTitle != title);
 
@@ -81,7 +82,8 @@ namespace If_Then_Food
                     if (rule.If.Except(confirmedFacts).ToList().Count == 0)
                     {
                         tb.Text = Convert.ToString(rule.Then);
-                        L.AddLog(Convert.ToString(rule.Then) + " - conclusion");
+                        facts.Add(Convert.ToString(rule.Then) + " - conclusion");
+                        ExplW.Update(facts);
                         break;
                     }
                     else
@@ -96,7 +98,8 @@ namespace If_Then_Food
         private void nbtn_Click(object sender, RoutedEventArgs e)
         {
             title = workMemory[0].Title;
-            L.AddLog(Convert.ToString(workMemory[0]) + " - no");
+            facts.Add(Convert.ToString(workMemory[0]) + " - no");
+            ExplW.Update(facts);
             workMemory.RemoveAll(x => x.ConditionTitle == title);
             workMemory.RemoveAt(0);
             foreach (var rule in knowlegeBase.Rules)
@@ -104,7 +107,8 @@ namespace If_Then_Food
                 if (rule.If.Except(confirmedFacts).ToList().Count == 0)
                 {
                     tb.Text = Convert.ToString(rule.Then);
-                    L.AddLog(Convert.ToString(rule.Then) + " - conclusion");
+                    facts.Add(Convert.ToString(rule.Then) + " - conclusion");
+                    ExplW.Update(facts);                  
                     break;
                 }
                 else
@@ -120,7 +124,7 @@ namespace If_Then_Food
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            L.Show();
+            ExplW.Show();
         }
 
         private void editbtn_Click(object sender, RoutedEventArgs e)
@@ -131,8 +135,9 @@ namespace If_Then_Food
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            L.CloseWindow = false;
-            L.Close();
+            E.Close();
+            ExplW.CloseWindow = true;
+            ExplW.Close();
         }
     }
 }

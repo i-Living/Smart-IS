@@ -7,7 +7,7 @@
     <ProjectGuid>{9A6E9E68-32BA-41B0-8ABC-BDBB149ED63A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>If_Then_Food</RootNamespace>
+    <RootNamespace>IfThenFoodProgram</RootNamespace>
     <AssemblyName>If-Then-Food</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,18 +53,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="EditDB.xaml.cs">
+    <Compile Include="Inference\EditDB.xaml.cs">
       <DependentUpon>EditDB.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Logs.xaml.cs">
-      <DependentUpon>Logs.xaml</DependentUpon>
+    <Compile Include="Inference\ExplanationWindow.xaml.cs">
+      <DependentUpon>ExplanationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="XMLDataLoader.cs" />
-    <Page Include="EditDB.xaml">
+    <Page Include="Inference\EditDB.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Logs.xaml">
+    <Page Include="Inference\ExplanationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,8 +76,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InferenceEngine\InferenceEngine.cs" />
-    <Compile Include="InferenceEngine\WorkMemory.cs" />
+    <Compile Include="Inference\WorkMemory.cs" />
     <Compile Include="KnowlegeBase\KnowlegeBase.cs" />
     <Compile Include="KnowlegeBase\Logic\Conclusion.cs" />
     <Compile Include="KnowlegeBase\Logic\Fact.cs" />

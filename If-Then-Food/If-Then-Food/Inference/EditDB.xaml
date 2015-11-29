@@ -1,7 +1,7 @@
-﻿<Window x:Class="If_Then_Food.EditDB"
+﻿<Window x:Class="IfThenFoodProgram.EditDB"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="EditDB" Height="370" Width="680" Closed="Window_Closed">
+        Title="EditDB" Height="370" Width="680">
     <Grid>
         <StackPanel Name="Facts" HorizontalAlignment="Left" Margin="10,43,0,10" Width="200">
             <Label Content="ConditionTitle"/>

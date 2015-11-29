@@ -1,4 +1,4 @@
-﻿using PRES_console;
+﻿using IfThenFoodProgram;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace If_Then_Food
+namespace IfThenFoodProgram
 {
     /// <summary>
     /// Логика взаимодействия для EditDB.xaml
@@ -116,11 +116,6 @@ namespace If_Then_Food
                 Load_CB();
                 CT.Clear();
             }
-        }
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-
         }
 
         private void FD_Click(object sender, RoutedEventArgs e)

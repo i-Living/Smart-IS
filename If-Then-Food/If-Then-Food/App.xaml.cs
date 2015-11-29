@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace If_Then_Food
+namespace IfThenFoodProgram
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

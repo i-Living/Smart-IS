@@ -12,58 +12,50 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace If_Then_Food
+namespace IfThenFoodProgram
 {
     /// <summary>
-    /// Логика взаимодействия для Logs.xaml
+    /// Логика взаимодействия для ExplanationWindow.xaml
     /// </summary>
-    public partial class Logs : Window
+    public partial class ExplanationWindow : Window
     {
-        List<string> _logs;
-
-        public List<string> LogsChange
-        {
-            get { return _logs; }
-            set { _logs = value; }
-        }
-        bool close;
-
+        private bool close;
         public bool CloseWindow
         {
             get { return close; }
             set { close = value; }
         }
-        public Logs()
+        public ExplanationWindow()
         {
             InitializeComponent();
-            close = true;
+            close = false;
         }
-        public Logs(List<string> logs)
+        public ExplanationWindow(List<string> facts)
         {
             InitializeComponent();
-            _logs = logs;
-            foreach (var item in _logs)
+            close = false;
+            foreach (var item in facts)
             {
                 tb.Text += item + "\n";
             }
-            close = true;
         }
-
-        public void AddLog(String log)
+        public void Update(List<string> facts)
         {
-            _logs.Add(log);
-            tb.Text = " ";
-            foreach (var item in _logs)
+            tb.Text = string.Empty;
+            foreach (var item in facts)
             {
                 tb.Text += item + "\n";
             }
+        }
+        public void Clear()
+        {
+            tb.Text = string.Empty;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.Visibility = System.Windows.Visibility.Hidden;
-            e.Cancel = close;
+            e.Cancel = !close;
         }
-
     }
 }
