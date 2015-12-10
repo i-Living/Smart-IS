@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<KnowlegeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <Node>
+      <Id>1</Id>
+      <Childs>
+        <Link>
+          <Id>2</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+        <Link>
+          <Id>4</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+        <Link>
+          <Id>5</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+        <Link>
+          <Id>6</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+        <Link>
+          <Id>7</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+      </Childs>
+      <Variants>
+        <Variant>
+          <Title>невыносимо</Title>
+          <LinkName>как</LinkName>
+        </Variant>
+        <Variant>
+          <Title>пить</Title>
+          <LinkName>хочется</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>2</Id>
+      <Childs>
+        <Link>
+          <Id>3</Id>
+          <LinkType>Is_a</LinkType>
+        </Link>
+      </Childs>
+      <Variants>
+        <Variant>
+          <Title>попить чай</Title>
+          <LinkName>что делать</LinkName>
+        </Variant>
+        <Variant>
+          <Title>чай</Title>
+          <LinkName>чего хочется</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>3</Id>
+      <Childs />
+      <Variants>
+        <Variant>
+          <Title>Na</Title>
+          <LinkName>не хватает</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>4</Id>
+      <Childs />
+      <Variants>
+        <Variant>
+          <Title>кофе</Title>
+          <LinkName>чего хочсется</LinkName>
+        </Variant>
+        <Variant>
+          <Title>попить кофе</Title>
+          <LinkName>что делать</LinkName>
+        </Variant>
+        <Variant>
+          <Title>K</Title>
+          <LinkName>не хватает</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>5</Id>
+      <Childs />
+      <Variants>
+        <Variant>
+          <Title>необитаемый остров</Title>
+          <LinkName>локатив</LinkName>
+        </Variant>
+        <Variant>
+          <Title>искать источник воды</Title>
+          <LinkName>что делать</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>6</Id>
+      <Childs />
+      <Variants>
+        <Variant>
+          <Title>какао</Title>
+          <LinkName>чего хочется</LinkName>
+        </Variant>
+        <Variant>
+          <Title>попить какао</Title>
+          <LinkName>что делать</LinkName>
+        </Variant>
+        <Variant>
+          <Title>Mg</Title>
+          <LinkName>не хватает</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+    <Node>
+      <Id>7</Id>
+      <Childs />
+      <Variants>
+        <Variant>
+          <Title>молоко</Title>
+          <LinkName>чего хочется</LinkName>
+        </Variant>
+        <Variant>
+          <Title>попить молоко</Title>
+          <LinkName>что делать</LinkName>
+        </Variant>
+        <Variant>
+          <Title>Ca</Title>
+          <LinkName>не хватает</LinkName>
+        </Variant>
+      </Variants>
+    </Node>
+  </Nodes>
+</KnowlegeBase>
