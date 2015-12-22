@@ -32,3 +32,21 @@ C:\Users\LIVING\Documents\MEGA\Study\Интелектуальные ИС\lab2\If
 C:\Users\LIVING\Documents\MEGA\Study\Интелектуальные ИС\lab2\If-Then-Food\If-Then-Food\obj\Debug\Inference\ExplanationWindow.baml
 C:\Users\LIVING\Documents\MEGA\Study\Интелектуальные ИС\lab2\If-Then-Food\If-Then-Food\obj\Debug\Inference\EditDB.g.cs
 C:\Users\LIVING\Documents\MEGA\Study\Интелектуальные ИС\lab2\If-Then-Food\If-Then-Food\obj\Debug\Inference\ExplanationWindow.g.cs
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\Inference\EditDB.baml
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\Inference\ExplanationWindow.baml
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\MainWindow.baml
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\Inference\EditDB.g.cs
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\Inference\ExplanationWindow.g.cs
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\MainWindow.g.cs
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\App.g.cs
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFoodProgram.Properties.Resources.resources
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\If-Then-Food.csproj.GenerateResource.Cache
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.config
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.pdb
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.CodeAnalysisLog.xml
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.lastcodeanalysissucceeded
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood_MarkupCompile.cache
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.g.resources
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.exe
+E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pdb

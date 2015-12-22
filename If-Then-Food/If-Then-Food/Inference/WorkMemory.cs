@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// Временная память для фактов
+    /// </summary>
     class WorkMemory: List<Fact>
     {
         public WorkMemory(List<Fact> facts)

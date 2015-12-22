@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// Реализация правила
+    /// </summary>
     [Serializable]
     public class Rule
     {

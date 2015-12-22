@@ -7,9 +7,12 @@ using System.Xml.Serialization;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// Класс, реализующий хранение данных в виде набора правил и фактов
+    /// </summary>
     [Serializable]
     [XmlRoot("KnowlegeBase")]
-    public class KnowlegeBase //Хранение знаний
+    public class KnowlegeBase 
     {
         [XmlIgnore]
         public List<Rule> Rules { get; set; }

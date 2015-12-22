@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// XML serializer class logic
+    /// </summary>
     class XMLDataLoader
     {
         static string rulesFilePath = "data.xml";

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// Реализация факта
+    /// </summary>
     [Serializable]
     public class Fact
     {

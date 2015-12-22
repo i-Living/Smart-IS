@@ -38,22 +38,6 @@ namespace IfThenFoodProgram
             FCb.Items.Refresh();
             RCb.Items.Refresh();
             CCb.Items.Refresh();
-            //foreach (var Title in knowlegeBase.Conclusions)
-            //{
-            //    RThen.Items.Add(Title);
-            //}
-            //foreach (var Title in knowlegeBase.Facts)
-            //{
-            //    FCb.Items.Add(Title);
-            //}
-            //foreach (var Conclusion in knowlegeBase.RulesViews)
-            //{
-            //    RCb.Items.Add(Conclusion);
-            //} 
-            //foreach (var Title in knowlegeBase.Conclusions)
-            //{
-            //    CCb.Items.Add(Title);
-            //}
         }
 
         private void RAdd_Click(object sender, RoutedEventArgs e)
@@ -61,7 +45,6 @@ namespace IfThenFoodProgram
             if (RIf.Text.Length > 0 && RThen.SelectedItem != null)
             {
                 List<Fact> fl = new List<Fact>();
-                Fact f = new Fact();
                 string s = RIf.Text;
                 string[] t = s.Split('&');
                 foreach (string k in t)
@@ -80,9 +63,7 @@ namespace IfThenFoodProgram
                 }
                 rule = rule.Substring(0, rule.Length - 1);
                 rule += ") THEN " + c;
-                /////////
-
-                //Rule r = new Rule(rule, knowlegeBase.Facts, knowlegeBase.Conclusions);
+                ////////
                 knowlegeBase.RulesViews.Add(rule);
                 XMLDataLoader.Serialize(knowlegeBase);
                 Load_CB();

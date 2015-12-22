@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace IfThenFoodProgram
 {
+    /// <summary>
+    /// Реализация вывода
+    /// </summary>
     public class Conclusion
     {
         public string Title { get; set; }

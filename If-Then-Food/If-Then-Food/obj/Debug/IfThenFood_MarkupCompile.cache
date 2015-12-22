@@ -1,4 +1,4 @@
-﻿If-Then-Food
+﻿IfThenFood
 
 
 winexe
@@ -8,11 +8,11 @@ E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\
 IfThenFoodProgram
 none
 false
-DEBUG;TRACE
+CODE_ANALYSIS;DEBUG;TRACE
 E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\App.xaml
 3350919186
 
-17-1530639854
+132077164102
 12-1401562060
 Inference\EditDB.xaml;Inference\ExplanationWindow.xaml;MainWindow.xaml;
 
