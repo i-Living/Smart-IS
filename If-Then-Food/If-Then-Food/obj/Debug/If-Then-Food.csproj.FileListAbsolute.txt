@@ -53,3 +53,6 @@ E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pd
 D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.config
 D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.exe
 D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pdb
+C:\github\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.config
+C:\github\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.exe
+C:\github\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pdb

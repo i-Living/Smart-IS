@@ -12,8 +12,16 @@ namespace IfThenFoodProgram
     [Serializable]
     public class Rule
     {
-        public Rule() { }
-
+        /// <summary>
+        /// Простой конструктор
+        /// </summary>
+        public Rule() { } 
+        /// <summary>
+        /// Конструктор с параметрами
+        /// </summary>
+        /// <param name="loadInfo">информация</param>
+        /// <param name="factsList">Лист фактов</param>
+        /// <param name="conclusionsList">Лист выводов</param>
         public Rule(string loadInfo, List<Fact> factsList, List<Conclusion> conclusionsList)
         {
             If = new List<Fact>();
@@ -30,10 +38,10 @@ namespace IfThenFoodProgram
                 If.Add(factsList.Find(x => x.Title == factString));
         }
         
-        public List<Fact> If { get; set; }
-        public Conclusion Then { get; set; }
+        public List<Fact> If { get; set; } //Лист фактов
+        public Conclusion Then { get; set; } //Лист выводов
 
-        public override string ToString()
+        public override string ToString() //Вернуть строку If Then
         {
             string result = "IF (";
             foreach (var fact in If)

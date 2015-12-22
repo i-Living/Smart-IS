@@ -15,12 +15,15 @@ namespace IfThenFoodProgram
     public class KnowlegeBase 
     {
         [XmlIgnore]
-        public List<Rule> Rules { get; set; }
+        public List<Rule> Rules { get; set; } //Лист правил
 
-        public List<string> RulesViews { get; set; }
-        public List<Fact> Facts { get; set; }
-        public List<Conclusion> Conclusions { get; set; }
+        public List<string> RulesViews { get; set; } //Лист строк правил
+        public List<Fact> Facts { get; set; } //Лист фактов
+        public List<Conclusion> Conclusions { get; set; } //Лист выводов
 
+        /// <summary>
+        /// Загрузка правил
+        /// </summary>
         public void LoadRules() 
         {
             Rules = new List<Rule>();

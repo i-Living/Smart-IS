@@ -12,11 +12,11 @@ namespace IfThenFoodProgram
     [Serializable]
     public class Fact
     {
-        public string ConditionTitle { get; set; }
-        public string Title { get; set; }
-        public string Question { get; set; }
+        public string ConditionTitle { get; set; } //Название главной ветки 
+        public string Title { get; set; } //Название ветки факта
+        public string Question { get; set; } //Вопрос
 
-        public override string ToString()
+        public override string ToString() //Вернуть название факта
         {
             return Title;
         }

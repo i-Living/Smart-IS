@@ -30,3 +30,6 @@ D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\MainWin
 D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\SemanticNetwork.g.resources
 D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\SemanticNetwork.Properties.Resources.resources
 D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\SemanticNetwork.csproj.GenerateResource.Cache
+C:\github\Smart-IS\SemanticNetwork\SemanticNetwork\bin\Debug\SemanticNetwork.exe.config
+C:\github\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\SemanticNetwork.exe
+C:\github\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\SemanticNetwork.pdb

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\
+C:\github\Smart-IS\SemanticNetwork\SemanticNetwork\obj\Debug\
 SemanticNetwork
 none
 false
 DEBUG;TRACE
-D:\Development\GitHub\Smart-IS\SemanticNetwork\SemanticNetwork\App.xaml
+C:\github\Smart-IS\SemanticNetwork\SemanticNetwork\App.xaml
 2-119276174
 
 20-1517635624
 13-1142990016
 EditNodeWindow.xaml;MainWindow.xaml;
 
-False
+True
 

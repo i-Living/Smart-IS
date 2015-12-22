@@ -11,9 +11,9 @@ namespace IfThenFoodProgram
     /// </summary>
     public class Conclusion
     {
-        public string Title { get; set; }
+        public string Title { get; set; } //Название
 
-        public override string ToString()
+        public override string ToString() //Вернуть название
         {
             return Title;
         }
