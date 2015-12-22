@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Хранение данных ветвей
+    /// </summary>
     [Serializable]
     public class KnowlegeBase
     {

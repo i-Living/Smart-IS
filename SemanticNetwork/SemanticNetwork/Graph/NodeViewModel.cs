@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Представление для ветвей
+    /// </summary>
     public class NodeViewModel
     {
         public string Id { get; set; }

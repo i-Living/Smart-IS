@@ -24,7 +24,7 @@ namespace SemanticNetwork
         MainWindow parent;
 
         public List<ContentControl> AllItems { get; set; }
-    
+
         public IEnumerable<int> AllItemsId
         {
             get
@@ -35,18 +35,9 @@ namespace SemanticNetwork
 
         public List<Link> ChildLinks { get; set; }
 
-        /*public List<ContentControl> ChildItems
-        { 
-            get
-            {
-                return (from link in ChildLinks select new ContentControl() { Tag = link }).ToList();
-            }
-        }*/
-
         public List<Link> SelectedChildLinks { get; set; }
 
         public List<Variant> Variants { get; set; }
-
 
         public int CurrentNodeId
         {
@@ -80,9 +71,9 @@ namespace SemanticNetwork
 
         List<ContentControl> GetChildItems(List<Link> childs, int nodeId)
         {
-            return (from itemId 
+            return (from itemId
                     in AllItemsId
-                    where 
+                    where
                         !(from link in childs select link.Id).Contains(itemId) &&
                         itemId != nodeId
                     select new ContentControl() { Content = itemId, Tag = itemId }).ToList();
@@ -98,7 +89,6 @@ namespace SemanticNetwork
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Load();
-
             List<LinkType> linkTypes = Enum.GetValues(typeof(LinkType)).Cast<LinkType>().ToList();
             IEnumerable<ContentControl> linkTypeControls = (from linkType in linkTypes select new ContentControl() { Content = linkType.ToString(), Tag = linkType });
             cbChildLink.ItemsSource = linkTypeControls;
@@ -109,13 +99,13 @@ namespace SemanticNetwork
         {
             cbNode.Items.Clear();
             AllItems.Clear();
-            
+
             lvChilds.ItemsSource = SelectedChildLinks;
             lvVariants.ItemsSource = Variants;
 
             cbNode.Items.Add("Add new...");
             foreach (var node in knowlegeBaseManager.Base.Nodes)
-                AllItems.Add(new ContentControl() { Content = node.Id.ToString(), Tag = node.Id});
+                AllItems.Add(new ContentControl() { Content = node.Id.ToString(), Tag = node.Id });
             foreach (var node in knowlegeBaseManager.Base.Nodes)
                 cbNode.Items.Add(new ContentControl() { Content = node.Id.ToString(), Tag = node.Id });
             cbNode.SelectedIndex = 0;
@@ -128,11 +118,6 @@ namespace SemanticNetwork
             Visibility = Visibility.Hidden;
             e.Cancel = true;
             parent.FillTable();
-        }
-
-        public void LoadNode(Node node)
-        {
-            
         }
 
         private void cbNode_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -156,7 +141,7 @@ namespace SemanticNetwork
                 Node node = knowlegeBaseManager.Base.Nodes.Find(x => x.Id == (int)(cbNode.SelectedItem as ContentControl).Tag);
                 tbId.Text = node.Id.ToString();
                 tbId.IsEnabled = false;
-                
+
                 SelectedChildLinks.Clear();
                 SelectedChildLinks = new List<Link>(node.Childs);
                 Variants = new List<Variant>(node.Variants);
@@ -213,7 +198,6 @@ namespace SemanticNetwork
                 knowlegeBaseManager.SetNodeVariants(id, Variants);
             }
             Load();
-            //Hide();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)

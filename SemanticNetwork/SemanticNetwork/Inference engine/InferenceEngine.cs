@@ -7,6 +7,9 @@ using System.Windows;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// InferenceEngine logic
+    /// </summary>
     class InferenceEngine
     {
         KnowlegeBaseManager knowlegeBaseManager;

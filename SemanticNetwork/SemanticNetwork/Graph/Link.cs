@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Реализация связей
+    /// </summary>
+    /// 
     [Serializable]
     public enum LinkType
     {

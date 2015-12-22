@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Представление для вопросов к сем сети
+    /// </summary>
     class Sentence
     {
         public string Data { get; set; }

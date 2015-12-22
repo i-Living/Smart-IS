@@ -24,12 +24,11 @@ namespace SemanticNetwork
         KnowlegeBase knowlegeBase;
         KnowlegeBaseManager knowlegeBaseManager;
         InferenceEngine inferenceEngine;
-  
 
         public MainWindow()
         {
             InitializeComponent();
-            knowlegeBase = (LoadKnowlegeBaseFromFile());//new KnowlegeBase();//
+            knowlegeBase = (LoadKnowlegeBaseFromFile());
             knowlegeBaseManager = new KnowlegeBaseManager(knowlegeBase);
             editNodeWindow = new EditNodeWindow(this, knowlegeBaseManager);
             inferenceEngine = new InferenceEngine(knowlegeBaseManager);

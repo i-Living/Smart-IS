@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Хранение различных вариантов
+    /// </summary>
     [Serializable]
     public class Variant
     {

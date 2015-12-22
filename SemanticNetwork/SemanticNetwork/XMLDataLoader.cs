@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace SemanticNetwork
 {
+    /// <summary>
+    /// Реализация XML сериалайзера
+    /// </summary>
     class XMLDataLoader
     {
         static string rulesFilePath = "data.xml";
