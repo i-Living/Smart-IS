@@ -30,6 +30,9 @@ namespace IfThenFoodProgram
         ExplanationWindow ExplW;
         EditDB E;
         string title;
+        /// <summary>
+        /// конструктор окна
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -42,6 +45,9 @@ namespace IfThenFoodProgram
             title = string.Empty;
             Run();
         }
+        /// <summary>
+        /// показ вопроса
+        /// </summary>
         public void Run()
         {
             if (workMemory.Count == 0)
@@ -53,7 +59,9 @@ namespace IfThenFoodProgram
             else
                 tb.Text = workMemory[0].Question;          
         }
-
+        /// <summary>
+        /// запуск программы заного
+        /// </summary>
         public void Again()
         {
             knowlegeBase = XMLDataLoader.Deserialize();
@@ -66,7 +74,9 @@ namespace IfThenFoodProgram
             ExplW.Clear();
             Run();
         }
-
+        /// <summary>
+        /// нажатие на кнопку Yes"
+        /// </summary>
         private void ybtn_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -94,7 +104,9 @@ namespace IfThenFoodProgram
             {
             }
         }
-
+        /// <summary>
+        /// нажатие на кнопку "No"
+        /// </summary>
         private void nbtn_Click(object sender, RoutedEventArgs e)
         {
             title = workMemory[0].Title;
@@ -116,23 +128,31 @@ namespace IfThenFoodProgram
             }
             Run();
         }
-
+        /// <summary>
+        /// нажатие на кнопку Again
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Again();
         }
-
+        /// <summary>
+        /// вызов окна объяснения
+        /// </summary>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ExplW.Show();
         }
-
+        /// <summary>
+        /// вызов окна редактирования
+        /// </summary>
         private void editbtn_Click(object sender, RoutedEventArgs e)
         {
             E = new EditDB();
             E.Show();
         }
-
+        /// <summary>
+        /// выполняется при закрытии окна
+        /// </summary>
         private void Window_Closed(object sender, EventArgs e)
         {
             E.Close();

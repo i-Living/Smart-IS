@@ -12,10 +12,10 @@ namespace SemanticNetwork
     [Serializable]
     public class Variant
     {
-        public string Title { get; set; }
-        public string LinkName { get; set; }
+        public string Title { get; set; } // название
+        public string LinkName { get; set; } // имя связи
 
-        public override string ToString()
+        public override string ToString() // выводит название и имя связи
         {
             return string.Format("[{0}; {1}]", Title, LinkName);
         }

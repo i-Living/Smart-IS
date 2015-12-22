@@ -9,7 +9,6 @@ namespace SemanticNetwork
     /// <summary>
     /// Реализация связей
     /// </summary>
-    /// 
     [Serializable]
     public enum LinkType
     {
@@ -20,10 +19,10 @@ namespace SemanticNetwork
     [Serializable]
     public class Link
     {
-        public int Id { get; set; }
-        public LinkType LinkType { get; set; }
+        public int Id { get; set; } // id связи
+        public LinkType LinkType { get; set; } // тип связи
 
-        public override string ToString()
+        public override string ToString() // возвращает id
         {
             return Id.ToString();
         }

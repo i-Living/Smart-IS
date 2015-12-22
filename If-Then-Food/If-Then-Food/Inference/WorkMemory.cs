@@ -11,6 +11,10 @@ namespace IfThenFoodProgram
     /// </summary>
     class WorkMemory: List<Fact>
     {
+        /// <summary>
+        /// конструктор временной памяти
+        /// </summary>
+        /// <param name="facts">факты</param>
         public WorkMemory(List<Fact> facts)
         {
             foreach (var fact in facts)

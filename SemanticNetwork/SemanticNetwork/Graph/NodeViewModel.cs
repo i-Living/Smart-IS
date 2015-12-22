@@ -11,9 +11,9 @@ namespace SemanticNetwork
     /// </summary>
     public class NodeViewModel
     {
-        public string Id { get; set; }
-        public string Childs { get; set; }
-        public string Parents { get; set; }
-        public string Variants { get; set; }
+        public string Id { get; set; } // id связи
+        public string Childs { get; set; } // зависимая ветвь
+        public string Parents { get; set; } // верхняя ветвь
+        public string Variants { get; set; } // варианты
     }
 }

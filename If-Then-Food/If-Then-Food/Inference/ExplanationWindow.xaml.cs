@@ -25,11 +25,17 @@ namespace IfThenFoodProgram
             get { return close; }
             set { close = value; }
         }
+        /// <summary>
+        /// конструктор окна
+        /// </summary>
         public ExplanationWindow()
         {
             InitializeComponent();
             close = false;
         }
+        /// <summary>
+        /// конструктор окна с фактами
+        /// </summary>
         public ExplanationWindow(List<string> facts)
         {
             InitializeComponent();
@@ -39,6 +45,9 @@ namespace IfThenFoodProgram
                 tb.Text += item + "\n";
             }
         }
+        /// <summary>
+        /// медод для обновления ответов
+        /// </summary>
         public void Update(List<string> facts)
         {
             tb.Text = string.Empty;
@@ -47,11 +56,16 @@ namespace IfThenFoodProgram
                 tb.Text += item + "\n";
             }
         }
+        /// <summary>
+        /// очистка окна ответов
+        /// </summary>
         public void Clear()
         {
             tb.Text = string.Empty;
         }
-
+        /// <summary>
+        /// выполняется при закрытии окна программы
+        /// </summary>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.Visibility = System.Windows.Visibility.Hidden;

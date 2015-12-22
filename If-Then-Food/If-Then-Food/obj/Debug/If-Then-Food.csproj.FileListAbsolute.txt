@@ -50,3 +50,6 @@ E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood_Ma
 E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.g.resources
 E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.exe
 E:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pdb
+D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\bin\Debug\IfThenFood.exe.config
+D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.exe
+D:\Development\GitHub\Smart-IS\If-Then-Food\If-Then-Food\obj\Debug\IfThenFood.pdb

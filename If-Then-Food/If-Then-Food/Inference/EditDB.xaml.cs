@@ -21,13 +21,18 @@ namespace IfThenFoodProgram
     public partial class EditDB : Window
     {
         KnowlegeBase knowlegeBase;
+        /// <summary>
+        /// конструктор окна редактирования
+        /// </summary>
         public EditDB()
         {
             InitializeComponent();
             knowlegeBase = XMLDataLoader.Deserialize();
             Load_CB();
         }
-
+        /// <summary>
+        /// метод для загрузки комбобоксов
+        /// </summary>
         private void Load_CB()
         {
             RThen.ItemsSource = knowlegeBase.Conclusions;
@@ -39,7 +44,9 @@ namespace IfThenFoodProgram
             RCb.Items.Refresh();
             CCb.Items.Refresh();
         }
-
+        /// <summary>
+        /// добавление правила
+        /// </summary>
         private void RAdd_Click(object sender, RoutedEventArgs e)
         {
             if (RIf.Text.Length > 0 && RThen.SelectedItem != null)
@@ -70,7 +77,9 @@ namespace IfThenFoodProgram
                 FQ.Clear();
             }
         }
-
+        /// <summary>
+        /// добавление факта
+        /// </summary>
         private void FAdd_Click(object sender, RoutedEventArgs e)
         {
             if (FTitle.Text.Length > 0 && FQ.Text.Length > 0)
@@ -85,7 +94,9 @@ namespace IfThenFoodProgram
                 FQ.Clear();
             }
         }
-
+        /// <summary>
+        /// добавление вывода
+        /// </summary>
         private void CAdd_Click(object sender, RoutedEventArgs e)
         {
             if (CT.Text.Length > 0)
@@ -98,7 +109,9 @@ namespace IfThenFoodProgram
                 CT.Clear();
             }
         }
-
+        /// <summary>
+        /// удаление факта
+        /// </summary>
         private void FD_Click(object sender, RoutedEventArgs e)
         {
             if (FCb.SelectedItem != null)
@@ -110,7 +123,9 @@ namespace IfThenFoodProgram
             XMLDataLoader.Serialize(knowlegeBase);
             Load_CB();
         }
-
+        /// <summary>
+        /// удаление правила
+        /// </summary>
         private void RD_Click(object sender, RoutedEventArgs e)
         {
             if(RCb.SelectedItem != null)
@@ -124,7 +139,9 @@ namespace IfThenFoodProgram
                 Load_CB();
             }
         }
-
+        /// <summary>
+        /// удаление вывода
+        /// </summary>
         private void CD_Click(object sender, RoutedEventArgs e)
         {
             if (CCb.SelectedItem != null)
